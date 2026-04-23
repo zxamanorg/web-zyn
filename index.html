@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOCATION VIEW (HDX)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <header class="header">
+        <h1>LOCATION VIEW (HDX)</h1>
+        <p>Find your public IP address and approximate location</p>
+      </header>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="label">IP Address</span>
+          <span class="value" id="ip">Loading...</span>
+        </div>
+
+        <div class="info-item">
+          <span class="label">City</span>
+          <span class="value" id="city">Loading...</span>
+        </div>
+
+        <div class="info-item">
+          <span class="label">Region</span>
+          <span class="value" id="region">Loading...</span>
+        </div>
+
+        <div class="info-item">
+          <span class="label">Country</span>
+          <span class="value" id="country">Loading...</span>
+        </div>
+      </div>
+
+      <p id="status" class="status">Fetching your location...</p>
+
+      <div class="buttons">
+        <button id="refreshBtn" type="button">Refresh</button>
+        <button id="geoBtn" type="button">Use Browser Location</button>
+      </div>
+
+      <footer class="footer">
+        <p>Made by <strong>HDX</strong></p>
+        <p>Instagram: <a href="https://instagram.com/hdx_1.0" target="_blank" rel="noopener noreferrer">@hdx_1.0</a></p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
